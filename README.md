@@ -1,9 +1,9 @@
 # Cars-Project
 Cars-Project is site for selling cars.
 ## Frontend
--ReactJS
--CSS
--Bootstrap
+- ReactJS
+- CSS
+- Bootstrap
 ## Backend
 For back-end i use softuni practice server with little changes by my.
 ## Features
