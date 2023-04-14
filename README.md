@@ -9,7 +9,7 @@ Cars-Project is site for selling cars.
 ## Features
 ### Not logged in users
 - Can view homepage
-- Can view catalog page with cars
+- Can view catalog page
 - Can use search bar for cars
 ### Logged in users
 - Can Publish cars offers
