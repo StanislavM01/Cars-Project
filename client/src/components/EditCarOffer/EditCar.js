@@ -29,12 +29,12 @@ function EditCarOffer() {
         description: '',
         firstRegistration: '',
         price: '',
-        color: 'Red',
-        doors: '2/3',
-        gear: 'Automatic',
-        bodyType: 'Coupe',
-        fuelType: 'Gasoline',
-        condition: 'Used',
+        color: '',
+        doors: '',
+        gear: '',
+        bodyType: '',
+        fuelType: '',
+        condition: '',
         imageUrls: {
             mainImg: '',
             leftImages: {
