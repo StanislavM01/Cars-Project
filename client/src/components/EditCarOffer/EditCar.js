@@ -48,7 +48,6 @@ function EditCarOffer() {
     })
 
     useEffect(() => {
-
         for (const key in carInfo) {
             setCarInfo(oldData => ({
                 ...oldData,
