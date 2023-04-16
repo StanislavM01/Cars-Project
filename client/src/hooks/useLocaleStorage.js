@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { json } from "react-router-dom";
 
 function useLocaleStorage(defaultValue) {
     let [state, setState] = useState(() => {
@@ -11,7 +10,7 @@ function useLocaleStorage(defaultValue) {
 
     function changeLocaleStorage(userInfo) {
         if (userInfo !== '{}') {
-            setState(userInfo)
+           setState(userInfo)
             localStorage.setItem('auth',JSON.stringify(userInfo))
         }else{
             localStorage.clear()

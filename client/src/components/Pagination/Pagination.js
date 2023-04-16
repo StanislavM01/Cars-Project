@@ -6,13 +6,13 @@ function Pagination({ changeCurrentPage, currentPage, countPages, }) {
 
 
 
-    for (let i = 0; i < countPages; i++) {
+    for (let i = 1; i <= countPages; i++) {
         pages.push(
             <a
                 onClick={() => changeCurrentPage(i)}
                 className={currentPage === i ? styles['active'] : ''}
                 key={i}
-                type='button'>{i + 1}
+                type='button'>{i}
             </a>)
     }
 
@@ -20,7 +20,7 @@ function Pagination({ changeCurrentPage, currentPage, countPages, }) {
     return (
         <div className={styles['pagination']} >
             <a onClick={() => {
-                if (currentPage > 0) {
+                if (currentPage > 1) {
                     changeCurrentPage(currentPage - 1)
                 }
             }}
@@ -29,7 +29,7 @@ function Pagination({ changeCurrentPage, currentPage, countPages, }) {
             </a>
             {pages}
             <a onClick={() => {
-                if (currentPage < countPages - 1) {
+                if (currentPage < countPages ) {
                     changeCurrentPage(currentPage + 1)
                 }
             }}

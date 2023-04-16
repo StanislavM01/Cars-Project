@@ -7,23 +7,22 @@ import carsService from '../../services/carsService';
 
 function Catalog() {
     let [filterOptions, setFilterOptions] = useState({})
-    let [currentPage, setCurrentPage] = useState(0)
+    let [currentPage, setCurrentPage] = useState(1)
     let [countPages, setcountPages] = useState(1)
     let [carsInfo, setCarsInfo] = useState([])
-    let [isDeletedCar, setIsDeletedCar] = useState(false)
 
     useEffect(() => {
         let carsOnPage = 8
-        let carsToSkip = currentPage === 0 ? 0 : currentPage * carsOnPage
+        let carsToSkip = currentPage === 1 ? 0 : (currentPage - 1) * carsOnPage
         carsService.getCarsOnCurrentPage(carsToSkip, carsOnPage, filterOptions)
             .then(result => {
-                
+
                 setCarsInfo(result)
             })
             .catch(err => {
                 alert('Try again later to reload current page')
             })
-    }, [currentPage, filterOptions, isDeletedCar])
+    }, [currentPage, filterOptions])
 
     useEffect(() => {
         carsService.getCountOfAllCars(filterOptions)
@@ -32,25 +31,25 @@ function Catalog() {
             })
     }, [carsInfo])
 
+    function changeCurrentPage(pageNumber) {
+        setCurrentPage(pageNumber)
+    }
+
     function deleteCarfromState(deletedCarId) {
-        if (currentPage >= 1 && carsInfo.length === 1) {
+        if (currentPage > 1 && carsInfo.length === 1) {
+            setCarsInfo(oldData => oldData.filter(a => a._id != deletedCarId))
             changeCurrentPage(currentPage - 1)
-           
+
         } else {
-            setIsDeletedCar(!isDeletedCar)
+            setCarsInfo(oldData => oldData.filter(a => a._id != deletedCarId))
         }
 
 
     }
 
-    function changeCurrentPage(pageNumber) {
-       
-        setCurrentPage(pageNumber)
-
-    }
 
     function changeFilterOptions(filters) {
-        setCurrentPage(0)
+        setCurrentPage(1)
         setFilterOptions(filters)
 
     }

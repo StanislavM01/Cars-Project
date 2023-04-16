@@ -84,7 +84,7 @@ function CreateCarOffer() {
         }))
     }
 
-    function submitHandler(e) {
+    async function submitHandler(e) {
         e.preventDefault()
 
         if (Object.values(errors).every(a => a.valid === true)) {
@@ -98,7 +98,7 @@ function CreateCarOffer() {
                 }
             }
            
-            carsService.createOneCar(carData)
+            await carsService.createOneCar(carData)
                 .then(result => {
                     navigate('/catalog')
 

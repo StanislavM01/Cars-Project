@@ -29,7 +29,6 @@ function App() {
           </Route>
           <Route element={<OwnerRoute />}>
             <Route path='/edit/:carId' element={<EditCarOffer />} />
-
           </Route>
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
