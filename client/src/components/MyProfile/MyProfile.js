@@ -6,16 +6,15 @@ import CarCardMyProfile from './CarCardMyProfile/CarCardMyProfile'
 import Pagination from '../Pagination/Pagination'
 
 function MyProfile() {
-    let [currentPage, setCurrentPage] = useState(0)
+    let [currentPage, setCurrentPage] = useState(1)
     let [countPages, setcountPages] = useState(1)
-    let [isDeletedCar, setIsDeletedCar] = useState(false)
     let [carsInfo, setCarsInfo] = useState([])
     let { userInfo } = useContext(UserContext)
     let userId = userInfo._id
 
     useEffect(() => {
         let carsOnPage = 8
-        let carsToSkip = currentPage === 0 ? 0 : currentPage * carsOnPage
+        let carsToSkip = currentPage === 1 ? 0 : (currentPage - 1) * carsOnPage
         carsService.getUserCarsOnCurrentPage(carsToSkip, carsOnPage, userId)
             .then(result => {
                 setCarsInfo(result)
@@ -23,7 +22,7 @@ function MyProfile() {
             .catch(err => {
                 alert('Try again later to reload your profile')
             })
-    }, [currentPage,isDeletedCar])
+    }, [currentPage])
 
     useEffect(() => {
         carsService.getCountOfUserCars(userId)
@@ -32,11 +31,12 @@ function MyProfile() {
             })
     }, [carsInfo])
 
-    function deleteCarfromState() {
-        if (currentPage >= 1 && carsInfo.length === 1) {
+    function deleteCarfromState(deletedCarId) {
+        if (currentPage > 1 && carsInfo.length === 1) {
+            setCarsInfo(oldData => oldData.filter(a => a._id != deletedCarId))
             changeCurrentPage(currentPage - 1)
         } else {
-            setIsDeletedCar(!isDeletedCar)
+            setCarsInfo(oldData => oldData.filter(a => a._id != deletedCarId))
         }
     }
 

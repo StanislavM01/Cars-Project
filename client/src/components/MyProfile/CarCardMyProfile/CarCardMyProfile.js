@@ -1,5 +1,5 @@
 import styles from './CarCardMyProfile.module.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import carsService from '../../../services/carsService'
 
 function CarCardMyProfile({
