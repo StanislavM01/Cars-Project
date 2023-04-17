@@ -11,10 +11,13 @@ import UserProvider from './contexts/UserContext';
 import CreateCarOffer from './components/CreateCarOffer/CreateCarOffer';
 import EditCarOffer from './components/EditCarOffer/EditCar';
 import Logout from './components/Logout/Logout';
-import PrivateRoute from './components/RouteGuards/PrivateRoute';
-import OwnerRoute from './components/RouteGuards/OwnerRoute';
 import MyProfile from './components/MyProfile/MyProfile';
 import Error404 from "./components/Error404/Error404"
+
+import PrivateRoute from './components/RouteGuards/PrivateRoute';
+import OwnerRoute from './components/RouteGuards/OwnerRoute';
+import LogoutRoute from './components/RouteGuards/LogoutRoute'
+
 function App() {
   return (
     <div>
@@ -30,11 +33,13 @@ function App() {
           <Route element={<OwnerRoute />}>
             <Route path='/edit/:carId' element={<EditCarOffer />} />
           </Route>
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
+          <Route element={<LogoutRoute />}>
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Route>
           <Route path='/catalog' element={<Catalog />} />
           <Route path='/details/:carId' element={<Details />} />
-          <Route path='*' element={<Error404 />}/>
+          <Route path='*' element={<Error404 />} />
 
         </Routes>
       </UserProvider>
