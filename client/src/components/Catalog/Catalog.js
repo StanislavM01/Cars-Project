@@ -6,12 +6,15 @@ import { useEffect, useState } from 'react';
 import carsService from '../../services/carsService';
 
 function Catalog() {
+
     let [filterOptions, setFilterOptions] = useState({})
     let [currentPage, setCurrentPage] = useState(1)
     let [countPages, setcountPages] = useState(1)
     let [carsInfo, setCarsInfo] = useState([])
+   
 
     useEffect(() => {
+
         let carsOnPage = 8
         let carsToSkip = currentPage === 1 ? 0 : (currentPage - 1) * carsOnPage
         carsService.getCarsOnCurrentPage(carsToSkip, carsOnPage, filterOptions)

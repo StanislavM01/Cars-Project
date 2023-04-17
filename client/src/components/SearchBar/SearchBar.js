@@ -2,13 +2,14 @@ import { useState } from 'react'
 import styles from './SearchBar.module.css'
 
 function SearchBar({ changeFilterOptions }) {
+   
+
     let defaultState = {
         condition: 'default',
         brand: 'default',
         bodyType: 'default',
         fuelType: 'default',
         gear: 'default',
-        fuelType: 'default',
     }
     let [fillter, setFillter] = useState(defaultState)
 
@@ -30,7 +31,7 @@ function SearchBar({ changeFilterOptions }) {
 
     function resetFilters() {
         setFillter(defaultState)
-        changeFilterOptions(defaultState )
+        changeFilterOptions(defaultState)
     }
 
 
