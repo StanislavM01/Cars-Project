@@ -51,7 +51,7 @@ function price(price) {
 }
 
 function imageUrl(imageUrl) {
-    let regex = /^http[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/
+    let regex = /^https?:\/\/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/
     if (regex.test(imageUrl)) {
         return { valid: true, message: '' }
     } else {
