@@ -14,7 +14,7 @@ import Logout from './components/Logout/Logout';
 import PrivateRoute from './components/RouteGuards/PrivateRoute';
 import OwnerRoute from './components/RouteGuards/OwnerRoute';
 import MyProfile from './components/MyProfile/MyProfile';
-
+import Error404 from "./components/Error404/Error404"
 function App() {
   return (
     <div>
@@ -34,8 +34,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/catalog' element={<Catalog />} />
           <Route path='/details/:carId' element={<Details />} />
-          <Route path='/details' element={<Details />} />
-
+          <Route path='*' element={<Error404 />}/>
 
         </Routes>
       </UserProvider>
