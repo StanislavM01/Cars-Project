@@ -1,12 +1,14 @@
 import styles from "./EditCar.module.css"
-import { useEffect, useState } from "react"
+import { useEffect, useState,useContext } from "react"
 import { useParams, useOutletContext, useNavigate } from "react-router-dom"
 import carsService from "../../services/carsService"
 import formValidation from "../../utils/formValidation"
 import ImagesWithUrlsEdit from "./ImagesWithUrlsEdit/ImagesWithUrlsEdit"
+import { UserContext } from '../../contexts/UserContext'
 
 
 function EditCarOffer() {
+    let { userInfo } = useContext(UserContext)
     let navigate = useNavigate()
     let { carData } = useOutletContext()
     let { carId } = useParams()
@@ -61,8 +63,18 @@ function EditCarOffer() {
         e.preventDefault()
 
         if (Object.values(errors).every(a => a.message.length === 0)) {
+            let carData = {
+                ...carInfo,
+                creatorData: {
+                    firstName: userInfo.firstName,
+                    lastName: userInfo.lastName,
+                    email: userInfo.email,
+                    phone: userInfo.phone
+                }
+            }
 
-            carsService.editOneCar(carInfo, carId)
+
+            carsService.editOneCar(carData, carId)
                 .then(result => {
                     navigate(`/details/${carId}`)
                 })
@@ -231,7 +243,7 @@ function EditCarOffer() {
 
                     <div className={styles['item']}>
                         <label className={styles['label']} htmlFor="price">Price<span>*</span></label>
-                        <input className={styles['input']} onBlur={errorHandler} onChange={onChangeHandler} value={carInfo.price} id="price" type="text" name="price"  required/>
+                        <input className={styles['input']} onBlur={errorHandler} onChange={onChangeHandler} value={carInfo.price} id="price" type="text" name="price" required />
                         {errors.price?.message &&
                             <p className={styles['error']}>{errors.price?.message}</p>
                         }
