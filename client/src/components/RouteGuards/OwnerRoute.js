@@ -34,7 +34,7 @@ function OwnerRoute() {
         if (carData._ownerId === userInfo._id) {
 
             return (
-                <Outlet context={{carData}} />
+                <Outlet context={{ carData, carId: carData._id}} />
             )
 
         } else {

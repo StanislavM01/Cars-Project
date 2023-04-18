@@ -1494,13 +1494,13 @@
                 "price": 42000,
                 "condition": 'Used',
                 "imageUrls": {
-                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_5fff9cba-1ecb-4143-aa89-b0ee8c733c13.jpg/1080x810.webp",
+                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_0de31952-d070-4e59-92a2-714912858664.jpg/1920x1080.webp",
                     "leftImages": {
-                        "secondImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_34a18921-ec75-4899-bf6a-4e19f61fcec8.jpg/1080x810.webp",
-                        "thirdImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_56b9a996-1a2e-4dd8-8e87-5ea8774563ef.jpg/1080x810.webp",
-                        "fourthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_46007dcb-c3b4-426c-a2a4-28a36940db07.jpg/1080x810.webp",
-                        "fifthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_0037bc0b-5ddc-4af5-83f8-507220016df5.jpg/1080x810.webp",
-                        "sixthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_8d222220-d2db-4a80-804b-3e294df3b01c.jpg/1080x810.webp",
+                        "secondImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_cf77cff7-2a24-4ffe-9ffc-2de8873f040a.jpg/1920x1080.webp",
+                        "thirdImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_571b7d5c-a5b4-4450-bb93-bb97ea9d16ac.jpg/1920x1080.webp",
+                        "fourthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_3186a825-6379-4fc7-8b32-071a6a45d99e.jpg/1920x1080.webp",
+                        "fifthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_95ea30a8-9291-4e9b-a55f-be2d08e10690.jpg/1920x1080.webp",
+                        "sixthImg": "https://prod.pictures.autoscout24.net/listing-images/12fa01b2-890e-45cc-b46c-495eff8f052e_89a7c914-c957-4a6b-ae23-133894e95a73.jpg/1920x1080.webp",
 
                     }
                 },
@@ -1599,7 +1599,7 @@
                 "price": 69950,
                 "condition": 'Used',
                 "imageUrls": {
-                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/8aff74b1-1ad3-457d-900d-ff4ff40fdf63_d337f21e-c364-4425-a87e-4ea7685a9d53.jpg/720x540.webp",
+                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/8aff74b1-1ad3-457d-900d-ff4ff40fdf63_bc1addea-1222-4994-bc99-45e2d2d19673.jpg/1920x1080.webp",
                     "leftImages": {
                         "secondImg": "https://prod.pictures.autoscout24.net/listing-images/8aff74b1-1ad3-457d-900d-ff4ff40fdf63_4c90d98d-b84f-4e8e-be1f-0ebbea846fbf.jpg/720x540.webp",
                         "thirdImg": "https://prod.pictures.autoscout24.net/listing-images/8aff74b1-1ad3-457d-900d-ff4ff40fdf63_478fdd31-a3f5-4295-bbd1-6d47daed6304.jpg/720x540.webp",

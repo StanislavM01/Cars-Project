@@ -1,6 +1,6 @@
 import styles from "./EditCar.module.css"
-import { useEffect, useState,useContext } from "react"
-import { useParams, useOutletContext, useNavigate } from "react-router-dom"
+import { useEffect, useState, useContext } from "react"
+import {  useOutletContext, useNavigate } from "react-router-dom"
 import carsService from "../../services/carsService"
 import formValidation from "../../utils/formValidation"
 import ImagesWithUrlsEdit from "./ImagesWithUrlsEdit/ImagesWithUrlsEdit"
@@ -8,10 +8,9 @@ import { UserContext } from '../../contexts/UserContext'
 
 
 function EditCarOffer() {
-    let { userInfo } = useContext(UserContext)
     let navigate = useNavigate()
-    let { carData } = useOutletContext()
-    let { carId } = useParams()
+    let { userInfo } = useContext(UserContext)
+    let { carData, carId } = useOutletContext()
     let [errors, setErrors] = useState({
         brand: { valid: false, message: '' },
         model: { valid: false, message: '' },
