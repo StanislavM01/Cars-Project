@@ -6,7 +6,7 @@ import styles from './ImageSlider.module.css'
 function ImageSlider({ mainImg, leftImages }) {
     
     let [currentIndex, setCurrentIndex] = useState(0)
-    let [images, setImages] = useState([mainImg, ...Object.values(leftImages).filter(a => a != '')])
+    let [images, setImages] = useState([mainImg, ...Object.values(leftImages)])
     let arrLength = images.length
 
 
