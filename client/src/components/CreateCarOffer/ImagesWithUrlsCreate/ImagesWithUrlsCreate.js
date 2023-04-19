@@ -72,7 +72,7 @@ function ImagesWithtUrlsCreate({ mainImg, leftImages, changeImgUrl, errorHandler
                 <div className={`${styles['item']} ${styles['div-with-image']}`}>
                     <div className={styles['decrease-width']}>
                         <label htmlFor="fifthImg">Fifth Image Url<span>*</span></label>
-                        <input className={styles['input']} onBlur={errorHandler} id="fifthImg" onChange={changeImgUrl} value={leftImages.fifthImg} type="text" name="fifthImg" />
+                        <input className={styles['input']} onBlur={errorHandler} id="fifthImg" onChange={changeImgUrl} value={leftImages.fifthImg} type="text" name="fifthImg" required />
                         {errors.fifthImg?.message &&
                             <p className={styles['error']} >{errors.fifthImg?.message}</p>
                         }
@@ -86,7 +86,7 @@ function ImagesWithtUrlsCreate({ mainImg, leftImages, changeImgUrl, errorHandler
                 <div className={`${styles['item']} ${styles['div-with-image']}`}>
                     <div className={styles['decrease-width']}>
                         <label htmlFor="sixthImg">Sixth Image Url<span>*</span></label>
-                        <input className={styles['input']} onBlur={errorHandler} onChange={changeImgUrl} value={leftImages.sixthImg} id="sixthImg" type="text" name="sixthImg" />
+                        <input className={styles['input']} onBlur={errorHandler} onChange={changeImgUrl} value={leftImages.sixthImg} id="sixthImg" type="text" name="sixthImg" required />
                         {errors.sixthImg?.message &&
                             <p className={styles['error']} >{errors.sixthImg?.message}</p>
                         }
