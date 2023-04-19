@@ -1,6 +1,6 @@
 import styles from "./EditCar.module.css"
 import { useEffect, useState, useContext } from "react"
-import {  useOutletContext, useNavigate } from "react-router-dom"
+import { useOutletContext, useNavigate } from "react-router-dom"
 import carsService from "../../services/carsService"
 import formValidation from "../../utils/formValidation"
 import ImagesWithUrlsEdit from "./ImagesWithUrlsEdit/ImagesWithUrlsEdit"
@@ -21,7 +21,10 @@ function EditCarOffer() {
         mainImg: { valid: false, message: '' },
         secondImg: { valid: false, message: '' },
         thirdImg: { valid: false, message: '' },
-        fourthImg: { valid: false, message: '' }
+        fourthImg: { valid: false, message: '' },
+        fifthImg: { valid: false, message: '' },
+        sixthImg: { valid: false, message: '' }
+
     })
     let [carInfo, setCarInfo] = useState({
         brand: '',
@@ -131,6 +134,9 @@ function EditCarOffer() {
         'secondImg': formValidation.imageUrl,
         'thirdImg': formValidation.imageUrl,
         'fourthImg': formValidation.imageUrl,
+        'fifthImg': formValidation.imageUrl,
+        'sixthImg': formValidation.imageUrl,
+
     }
 
     return (

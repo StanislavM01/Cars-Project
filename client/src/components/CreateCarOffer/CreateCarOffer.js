@@ -20,7 +20,10 @@ function CreateCarOffer() {
         mainImg: { valid: false, message: '' },
         secondImg: { valid: false, message: '' },
         thirdImg: { valid: false, message: '' },
-        fourthImg: { valid: false, message: '' }
+        fourthImg: { valid: false, message: '' },
+        fifthImg: { valid: false, message: '' },
+        sixthImg: { valid: false, message: '' }
+
     })
 
     let [carInfo, setCarInfo] = useState({
@@ -60,6 +63,9 @@ function CreateCarOffer() {
         'secondImg': formValidation.imageUrl,
         'thirdImg': formValidation.imageUrl,
         'fourthImg': formValidation.imageUrl,
+        'fifthImg': formValidation.imageUrl,
+        'sixthImg': formValidation.imageUrl,
+
     }
 
 

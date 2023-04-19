@@ -71,8 +71,11 @@ function ImagesWithUrlsEdit({ mainImg, leftImages, changeImgUrl, errorHandler, e
 
                 <div className={`${styles['item']} ${styles['div-with-image']}`}>
                     <div className={styles['decrease-width']}>
-                        <label htmlFor="fifthImg">Fifth Image Url</label>
-                        <input className={styles['input']} onBlur={changeImgUrl} id="fifthImg" onChange={changeImgUrl} value={leftImages.fifthImg} type="text" name="fifthImg" />
+                        <label htmlFor="fifthImg">Fifth Image Url<span>*</span></label>
+                        <input className={styles['input']} onBlur={errorHandler} id="fifthImg" onChange={changeImgUrl} value={leftImages.fifthImg} type="text" name="fifthImg" />
+                        {errors.fifthImg?.message &&
+                            <p className={styles['error']} >{errors.fifthImg?.message}</p>
+                        }
                     </div>
 
                     <div className={`${styles['size-image']} card`} >
@@ -82,8 +85,11 @@ function ImagesWithUrlsEdit({ mainImg, leftImages, changeImgUrl, errorHandler, e
                 </div >
                 <div className={`${styles['item']} ${styles['div-with-image']}`}>
                     <div className={styles['decrease-width']}>
-                        <label htmlFor="sixthImg">Sixth Image Url</label>
-                        <input className={styles['input']} onBlur={changeImgUrl} onChange={changeImgUrl} value={leftImages.sixthImg} id="sixthImg" type="text" name="sixthImg" />
+                        <label htmlFor="sixthImg">Sixth Image Url<span>*</span></label>
+                        <input className={styles['input']} onBlur={errorHandler} onChange={changeImgUrl} value={leftImages.sixthImg} id="sixthImg" type="text" name="sixthImg" />
+                        {errors.sixthImg?.message &&
+                            <p className={styles['error']} >{errors.sixthImg?.message}</p>
+                        }
                     </div>
 
                     <div className={`${styles['size-image']} card`} >
