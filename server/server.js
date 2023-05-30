@@ -1564,13 +1564,13 @@
                 "price": 400000,
                 "condition": 'New',
                 "imageUrls": {
-                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_fbe25947-ef6b-4e97-a657-3981d39a3c6e.jpg/720x540.webp",
+                    "mainImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_8a1c95a2-7335-4c77-a9bb-91127a7d46a8.jpg/1920x1080.webp",
                     "leftImages": {
-                        "secondImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_3d418067-966a-446e-8074-3961ce12198f.jpg/720x540.webp",
-                        "thirdImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_46e0ac36-6511-4e2c-8f38-0da2538f2b06.jpg/720x540.webp",
-                        "fourthImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_44264c47-4db2-42ec-984b-1d126b8e7e35.jpg/720x540.webp",
-                        "fifthImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_52966c9d-cf32-4c02-bb64-6d059058139a.jpg/720x540.webp",
-                        "sixthImg": "https://prod.pictures.autoscout24.net/listing-images/ea8231cc-537d-412a-bd20-4c1307d3e65d_39e4ac2b-84e6-4c47-a364-5afcd22f80ff.jpg/720x540.webp",
+                        "secondImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_19072b9f-de80-4925-8013-1aaac1f4b5c8.jpg/1920x1080.webp",
+                        "thirdImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_53a3d739-b834-45c4-bc63-fc910eed0610.jpg/1920x1080.webp",
+                        "fourthImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_cd469d0c-5cbb-43c0-965a-ce60f7233b70.jpg/1920x1080.webp",
+                        "fifthImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_05641956-65bd-406a-925c-51c8ecafc2cc.jpg/1920x1080.webp",
+                        "sixthImg": "https://prod.pictures.autoscout24.net/listing-images/48fccfc3-476c-451e-9c75-483b59458911_659200d4-51e8-4c78-a939-27d243cc59f2.jpg/1920x1080.webp",
 
                     }
                 },
