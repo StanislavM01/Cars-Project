@@ -1553,7 +1553,7 @@
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "brand": "BMW",
                 "model": "M3 GTS E92",
-                "color": "Orange",
+                "color": "Gray",
                 "doors": "2/3",
                 "gear": "Automatic",
                 "mileage": 3855,
