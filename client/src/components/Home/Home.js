@@ -16,9 +16,8 @@ function Home() {
                 alert('Try again later to reload current page')
             })
 
-
     }, [])
-
+ 
     return (
         <div className={styles['font-body']}>
             <header className={styles['masthead']}>
